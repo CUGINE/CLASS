@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h3 style="color: black;">ADMISSION FORM</h2>
+        <form id="registration-form" action="#" method="post">
+            <label for="name">Student Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Residence Address</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Parent Details -->
+            <h4>Parent Details</h4>
+            <label for="parent-name">Parent Name</label>
+            <input type="text" id="parent-name" name="parent-name" required>
+
+            <label for="parent-phone">Parent Phone Number</label>
+            <input type="tel" id="parent-phone" name="parent-phone" required>
+
+            <label for="parent-address">Parent Residence Address</label>
+            <input type="text" id="parent-address" name="parent-address" required>
+
+            <label for="state">Residence State</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+
+            <!-- Academic Details -->
+            <h4>Academic Details</h4>
+            <label for="max-marks-10">Max Marks (10th)</label>
+            <input type="number" id="max-marks-10" name="max-marks-10" required>
+
+            <label for="obtained-marks-10">Obtained Marks (10th)</label>
+            <input type="number" id="obtained-marks-10" name="obtained-marks-10" required>
+
+            <label for="max-marks-12">Max Marks (12th)</label>
+            <input type="number" id="max-marks-12" name="max-marks-12" required>
+
+            <label for="obtained-marks-12">Obtained Marks (12th)</label>
+            <input type="number" id="obtained-marks-12" name="obtained-marks-12" required>
+
+            <label for="year-passing-10">Year of Passing (10th)</label>
+            <input type="number" id="year-passing-10" name="year-passing-10" required>
+
+            <label for="year-passing-12">Year of Passing (12th)</label>
+            <input type="number" id="year-passing-12" name="year-passing-12" required>
+
+            <label for="certificate-10">Upload 10th Certificate</label>
+            <input type="file" id="certificate-10" name="certificate-10" required>
+
+            <label for="certificate-12">Upload 12th Certificate</label>
+            <input type="file" id="certificate-12" name="certificate-12" required>
+
+     
+            <span class="error-message" id="name-error"></span>
+            <span class="error-message" id="email-error"></span>
+            <span class="error-message" id="password-error"></span>
+
+            <input type="submit" value="Login" class="submit-button">
+        </div>
+        </form>
+</body>
+</html>
